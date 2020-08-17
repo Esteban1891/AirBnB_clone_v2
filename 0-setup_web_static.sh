@@ -16,7 +16,7 @@ sudo sed -i "/server_name _/a add_header X-Served-By $HOSTNAME;" /etc/nginx/site
 # sets up your web servers for the deployment of web_static. It must in airbnb
 sudo mkdir -p /data/web_static/releases/test/
 sudo mkdir -p /data/web_static/shared/
-sudo chown $USER:$USER /data/web_static/releases/test/
+#sudo chown $USER:$USER /data/web_static/releases/test/
 echo "Holberton School" > /data/web_static/releases/test/index.html
 #el comando de abajo permite copiar el contenido del directorio inicial al otro current
 sudo ln -sf /data/web_static/releases/test/ /data/web_static/current

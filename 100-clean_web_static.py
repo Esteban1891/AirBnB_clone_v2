@@ -5,6 +5,8 @@ Fabric 100-clean_web_static.py file to web servers
 from fabric.api import env, local, put, run
 from datetime import datetime
 from os.path import exists, isdir
+
+
 env.hosts = ['34.73.222.49', '54.82.121.70']
 
 def do_pack():

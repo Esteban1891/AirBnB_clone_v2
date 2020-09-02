@@ -27,10 +27,15 @@ def hello_hbnb():
 def redirect():
     return('HBNB')
 
-@app.route('/python/<text>', strict_slashes=False)
+
 @app.route('/c/<text>', strict_slashes=False)
 def cisfun(text):
     return('C {}'.format(text.replace("_", " ")))
+
+
+@app.route('/python/<text_py>', strict_slashes=False)
+def python(text_py='is cool'):
+    return('python {}'.format(text_py.replace("_", " ")))
 
 
 if __name__ == '__main__':

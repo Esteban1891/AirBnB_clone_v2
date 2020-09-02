@@ -1,4 +1,3 @@
-
 #!/usr/bin/python3
 """List all states Module"""
 
@@ -21,6 +20,7 @@ def states_list():
 def teardown(self):
     """function that call close methofd"""
     storage.close()
+
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=5000)

@@ -1,9 +1,9 @@
 #!/usr/bin/python3
-"""List all states"""
-from flask import Flask, render_template
+"""List all states Module"""
+
 from models import storage
 from models.state import State
-
+from flask import Flask, render_template
 
 app = Flask(__name__)
 app.url_map.strict_slashes = False
@@ -17,7 +17,7 @@ def states_list():
 
 
 @app.teardown_appcontext
-def teardown():
+def teardown(self):
     """function that call close methofd"""
     storage.close()
 
